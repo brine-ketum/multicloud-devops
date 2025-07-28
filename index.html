@@ -1,0 +1,430 @@
+.azure-highlight {
+            font-size: 68px;
+            color: #0078D4;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            font-weight: 900;
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS DevOps Automation Cover Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        .cover-container {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #FF9500 0%, #FF6B35 25%, #F7931E 50%, #FFB84D 75%, #FF9500 100%);
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .aws-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.1) 0%, transparent 50%),
+                linear-gradient(45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%);
+            background-size: 60px 60px, 80px 80px, 40px 40px, 40px 40px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 80px;
+            height: calc(100% - 160px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+
+        .aws-logo {
+            display: none;
+        }
+
+        .main-title {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            letter-spacing: -1px;
+        }
+
+        .aws-highlight {
+            font-size: 68px;
+            color: #FFFFFF;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            font-weight: 900;
+        }
+
+        .devops-highlight {
+            font-size: 68px;
+            color: #FFFFFF;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            font-weight: 900;
+        }
+
+        .azure-highlight {
+            font-size: 68px;
+            color: #0078D4;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 50px;
+            opacity: 0.95;
+            line-height: 1.3;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .automation-tools {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-bottom: 40px;
+            max-width: 900px;
+        }
+
+        .tool {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 10px 14px;
+            border-radius: 18px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            display: block;
+            line-height: 1.2;
+            animation: heartbeat 2s ease-in-out infinite;
+        }
+
+        .aws-tool {
+            border-color: rgba(255, 149, 0, 0.6);
+            background: rgba(255, 149, 0, 0.2);
+        }
+
+        .azure-tool {
+            border-color: rgba(0, 120, 212, 0.6);
+            background: rgba(0, 120, 212, 0.2);
+        }
+
+        .tool:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            animation-play-state: paused;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+            }
+            25% { 
+                transform: scale(1.02);
+                box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+            }
+            50% { 
+                transform: scale(1.05);
+                box-shadow: 0 0 15px 8px rgba(255, 255, 255, 0.1);
+            }
+            75% { 
+                transform: scale(1.02);
+                box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        .metrics {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 35px;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-number {
+            font-size: 32px;
+            font-weight: 900;
+            display: block;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .metric-label {
+            font-size: 13px;
+            opacity: 0.9;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .aws-cta {
+            font-size: 16px;
+            font-weight: 700;
+            background: rgba(255, 149, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 149, 0, 0.5);
+            display: inline-block;
+            text-shadow: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .aws-cta:hover {
+            background: rgba(255, 149, 0, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 149, 0, 0.3);
+        }
+
+        .azure-cta {
+            font-size: 16px;
+            font-weight: 700;
+            background: rgba(0, 120, 212, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(0, 120, 212, 0.5);
+            display: inline-block;
+            text-shadow: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .azure-cta:hover {
+            background: rgba(0, 120, 212, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 120, 212, 0.3);
+        }
+
+        .automation-icons {
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .automation-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .automation-icon:nth-child(2) { animation-delay: 0.5s; }
+        .automation-icon:nth-child(3) { animation-delay: 1s; }
+        .automation-icon:nth-child(4) { animation-delay: 1.5s; }
+        .automation-icon:nth-child(5) { animation-delay: 2s; }
+
+        .aws-tool:nth-child(1) { animation-delay: 0.1s; }
+        .aws-tool:nth-child(2) { animation-delay: 0.2s; }
+        .aws-tool:nth-child(3) { animation-delay: 0.3s; }
+        .aws-tool:nth-child(4) { animation-delay: 0.4s; }
+        .aws-tool:nth-child(5) { animation-delay: 0.5s; }
+        .aws-tool:nth-child(6) { animation-delay: 0.6s; }
+        .aws-tool:nth-child(7) { animation-delay: 0.7s; }
+        .aws-tool:nth-child(8) { animation-delay: 0.8s; }
+        .aws-tool:nth-child(9) { animation-delay: 0.9s; }
+        .aws-tool:nth-child(10) { animation-delay: 1.0s; }
+        .aws-tool:nth-child(11) { animation-delay: 1.1s; }
+        .aws-tool:nth-child(12) { animation-delay: 1.2s; }
+
+        .azure-tool:nth-child(13) { animation-delay: 1.3s; }
+        .azure-tool:nth-child(14) { animation-delay: 1.4s; }
+        .azure-tool:nth-child(15) { animation-delay: 1.5s; }
+        .azure-tool:nth-child(16) { animation-delay: 1.6s; }
+        .azure-tool:nth-child(17) { animation-delay: 1.7s; }
+        .azure-tool:nth-child(18) { animation-delay: 1.8s; }
+        .azure-tool:nth-child(19) { animation-delay: 1.9s; }
+        .azure-tool:nth-child(20) { animation-delay: 2.0s; }
+
+        @keyframes pulse {
+            0%, 100% { 
+                transform: scale(1); 
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+            }
+            50% { 
+                transform: scale(1.05); 
+                box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .gear {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 40px;
+            animation: rotate 20s linear infinite;
+        }
+
+        .gear:nth-child(1) {
+            top: 15%;
+            left: 15%;
+            animation-duration: 15s;
+        }
+
+        .gear:nth-child(2) {
+            bottom: 25%;
+            left: 25%;
+            animation-duration: 25s;
+            animation-direction: reverse;
+        }
+
+        .gear:nth-child(3) {
+            top: 25%;
+            right: 25%;
+            animation-duration: 18s;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .productivity-badge {
+            position: absolute;
+            bottom: 30px;
+            left: 60px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px 25px;
+            border-radius: 30px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .badge-text {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .highlight {
+            color: #FFE135;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="aws-pattern"></div>
+        <div class="aws-logo">AWS DevOps</div>
+        
+        <div class="floating-elements">
+            <div class="gear">⚙️</div>
+            <div class="gear">⚙️</div>
+            <div class="gear">⚙️</div>
+        </div>
+        
+        <div class="content">
+            <h1 class="main-title"><span class="aws-highlight">AWS</span> + <span class="azure-highlight">Azure</span><br><span class="devops-highlight">DevOps</span> Automation<br><span class="highlight">Complete</span></h1>
+            <p class="subtitle">20+ Essential Tools Covering<br><span class="highlight">Multi-Cloud DevOps Ecosystem</span></p>
+            
+            <div class="automation-tools">
+                <a href="https://aws.amazon.com/codepipeline/" target="_blank" class="tool aws-tool">CodePipeline</a>
+                <a href="https://aws.amazon.com/codebuild/" target="_blank" class="tool aws-tool">CodeBuild</a>
+                <a href="https://aws.amazon.com/codecommit/" target="_blank" class="tool aws-tool">CodeCommit</a>
+                <a href="https://aws.amazon.com/codedeploy/" target="_blank" class="tool aws-tool">CodeDeploy</a>
+                <a href="https://aws.amazon.com/cloudformation/" target="_blank" class="tool aws-tool">CloudFormation</a>
+                <a href="https://aws.amazon.com/lambda/" target="_blank" class="tool aws-tool">Lambda</a>
+                <a href="https://aws.amazon.com/step-functions/" target="_blank" class="tool aws-tool">Step Functions</a>
+                <a href="https://aws.amazon.com/eventbridge/" target="_blank" class="tool aws-tool">EventBridge</a>
+                <a href="https://aws.amazon.com/systems-manager/" target="_blank" class="tool aws-tool">Systems Manager</a>
+                <a href="https://aws.amazon.com/codestar/" target="_blank" class="tool aws-tool">CodeStar</a>
+                <a href="https://aws.amazon.com/eks/" target="_blank" class="tool aws-tool">EKS</a>
+                <a href="https://aws.amazon.com/ecs/" target="_blank" class="tool aws-tool">ECS</a>
+                <a href="https://azure.microsoft.com/en-us/products/devops/pipelines/" target="_blank" class="tool azure-tool">Azure Pipelines</a>
+                <a href="https://azure.microsoft.com/en-us/products/devops/repos/" target="_blank" class="tool azure-tool">Azure Repos</a>
+                <a href="https://azure.microsoft.com/en-us/products/devops/artifacts/" target="_blank" class="tool azure-tool">Azure Artifacts</a>
+                <a href="https://azure.microsoft.com/en-us/products/devops/boards/" target="_blank" class="tool azure-tool">Azure Boards</a>
+                <a href="https://azure.microsoft.com/en-us/products/kubernetes-service/" target="_blank" class="tool azure-tool">AKS</a>
+                <a href="https://azure.microsoft.com/en-us/products/container-instances/" target="_blank" class="tool azure-tool">Container Instances</a>
+                <a href="https://azure.microsoft.com/en-us/products/functions/" target="_blank" class="tool azure-tool">Azure Functions</a>
+                <a href="https://azure.microsoft.com/en-us/products/resource-manager/" target="_blank" class="tool azure-tool">ARM Templates</a>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <span class="metric-number">20+</span>
+                    <span class="metric-label">DevOps Tools</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">2</span>
+                    <span class="metric-label">Cloud Platforms</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">100%</span>
+                    <span class="metric-label">Multi-Cloud Ready</span>
+                </div>
+                <a href="https://portal.azure.com/" target="_blank" class="cta azure-cta" style="margin-left: 15px; align-self: center;">Azure Portal →</a>
+                <a href="https://console.aws.amazon.com/" target="_blank" class="cta aws-cta" style="margin-left: 10px; align-self: center;">AWS Console →</a>
+            </div>
+        </div>
+
+        <div class="automation-icons">
+            <div class="automation-icon">🏗️</div>
+            <div class="automation-icon">🔒</div>
+            <div class="automation-icon">📊</div>
+            <div class="automation-icon">⚡</div>
+            <div class="automation-icon">🚀</div>
+        </div>
+
+        <div class="productivity-badge">
+            <p class="badge-text">Multi-Cloud DevOps Mastery</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
